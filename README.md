@@ -22,6 +22,6 @@ Como tecnologias utilizadas nesse projeto utilizei a seguinte stack:
 
 25/03/2020 - Desenvolvimento do front-end da parte web do sistema com ReactJS. Nesta etapa desenvolvemos todas as views do sistema, com página de login, página de cadastro e página de apresentação (listagem).
 
-26/03/2020 - --//--
+26/03/2020 - Desenvolvimento do Mobile com React Native. Criamos duas páginas, uma de visualização geral dos casos e outra página para abrir detalhes de um caso específico aonde o usuário pode entrar em contato com a ONG por e-mail ou whatsapp dentro do prórpio aplicativo.
 
 27/03/2020 - --//--
