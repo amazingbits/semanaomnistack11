@@ -1,6 +1,4 @@
-//pacote do node crypto que serve para
-//criar chaves criptografadas e/ou chaves randômicas
-const crypto = require('crypto')
+const generateUniqueId = require('../utils/generateUniqueId');
 //importo as configurações do connection.js
 const connection = require('../database/connection')
 module.exports = {
@@ -15,7 +13,7 @@ module.exports = {
     async create(request, response) {
         const { name, email, whatsapp, city, uf } = request.body
 
-        const id = crypto.randomBytes(4).toString('HEX')
+        const id = generateUniqueId();
 
         await connection('ongs').insert({
             id,

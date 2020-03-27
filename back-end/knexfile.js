@@ -13,6 +13,22 @@ module.exports = {
     useNullAsDefault: true
   },
 
+  //criei uma conexão de teste (test) aonde posso testar um banco
+  //extra para os meus testes sem que eu precise mexer nos dados
+  //da minha aplicação no desenvolvimento
+  //também instalei um pacote chamado "cross-env" onde, no package.json
+  //onde eu tenho o script de test (npm test) eu utilizo o meu banco de testes
+  test: {
+    client: 'sqlite3',
+    connection: {
+      filename: './src/database/test.sqlite'
+    },
+    migrations: {
+      directory: './src/database/migrations'
+    },
+    useNullAsDefault: true
+  },
+
   staging: {
     client: 'postgresql',
     connection: {
